@@ -1,0 +1,7 @@
+SELECT * FROM orders ORDER BY id DESC
+SELECT * FROM products WHERE id='$id'
+SELECT * FROM products WHERE hit_sales='1' AND availability='1' ORDER BY rating DESC
+SELECT * FROM products_categories ORDER BY id DESC
+SELECT * FROM products_categories WHERE id = '$category_id'
+
+INSERT INTO orders(sum, email, name, phone, comment, delivery_address, cart) VALUES ( '$sum', '$email', '$name', '$phone', '$comment', '$delivery_address', '$cart_json')
